@@ -1,0 +1,207 @@
+/* Global */
+
+body {
+    font-size: 1.5em;
+    font-family: 'Courgette', cursive;
+}
+
+/* Cabecera */
+
+header {
+    background: url(../img/escuela/escuela-01.jpg);
+}
+
+header #titulo {
+    overflow: hidden;
+    padding: 0px 0;
+}
+
+header h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Seccion Alumnos */
+
+.contenido {
+    margin: auto;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    animation: slidein 1s;
+}
+
+
+/* Pie de Pagina */
+
+footer {
+    background: url(../img/escuela/escuela-01.jpg);
+    color: #ffffff;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer>div {
+    width: 90%;
+}
+
+#info-sitio div {
+    padding: 0 2%;
+}
+
+#redes-sociales li {
+    list-style: none;
+}
+
+#redes-sociales ul {
+    text-align-last: center;
+    padding: 0;
+    margin-bottom: 0%;
+}
+
+footer #info-sitio {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+/* Registro */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/escuela/escuela-03.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#registro {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+}
+
+#registro input {
+    width: 100%;
+}
+
+/* Botones */
+
+#botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0%;
+}
+
+button {
+    display: flex;
+    justify-content: left;
+    background: transparent;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    width: 25%;
+    font-size: 2vw;
+    color: #fff;
+    background: rgb(28, 138, 14);
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.fas {
+    padding-right: 10%;
+}
+
+button:hover {
+    background-color: rgb(19, 92, 10);
+}
+
+/* Animaciones */
+
+@-webkit-keyframes slidein {
+    0% {
+        margin-top: 150%;
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 2%;
+    }
+}
+
+/* Media Queries */
+
+@media (min-width:900px) {
+    /* Seccion Alumnos */
+    section {
+        display: flex;
+        flex-direction: row;
+        background: url(../img/escuela/escuela-02.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    aside {
+        margin: 2% 2%;
+        width: 30%;
+        position: sticky;
+        top: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 0%;
+    }
+    .contenido {
+        width: 65%;
+        margin: 2%;
+        padding: 1%;
+        background-color: #444444;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Pie de Pagina */
+    footer #info-sitio {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        text-align: center;
+    }
+    #redes-sociales ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* Registro*/
+    #registro {
+        padding: 4% 0%;
+        text-align: center;
+        width: 100%;
+    }
+  
+    #registro input {
+        width: 90%
+    }
+
+    /* Botones */
+    #botones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    button {
+        width: 100%;
+        font-size: 1.4vw;
+    }
+}

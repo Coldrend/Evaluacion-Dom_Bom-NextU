@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Evaluacion con Javascript para el desarrollo web">
+    <meta name="keywords" content="Evaluacion Javascript Nextu">
+    <meta name="autor" content="Brian Herrera Vergara">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title> Escuela - alumnos | Evaluacion </title>
+</head>
+
+<body onload="alumnosLista()">
+    <!-- Cabecera -->
+    <header>
+        <div id="titulo">
+            <h1>Resumen Estudiantes</h1>
+        </div>
+    </header>
+    <!-- Seccion Alumnos -->
+    <section>
+        <aside>
+            <div id="registro">
+                <h3>Registro Estudiantes</h3>
+                <form>
+                    <label for="nombre"><b>Nombre:</b></label>
+                
+                    <input type="text" name="nombre">
+              
+                    <label for="apellido"><b>Apellido:</b></label>
+             
+                    <input type="text" name="apellido">
+           
+                    <label for="nota"><b>Nota:</b></label>
+     
+                    <input type="text" name="nota">
+                </form>
+            </div>
+            <!-- Seccion botones -->
+            <div id="botones">
+                <button onclick="mostrarTodo()">
+                    <i class="fas fa-graduation-cap"></i>
+                    Registrar Estudiante</button>
+                <button onclick="promedioAlumnos()">
+                    <i class="fas fa-graduation-cap"></i>
+                    Mostrar Promedio</button>
+                <button onclick="notaMayor()">
+                    <i class="fas fa-graduation-cap"></i>
+                    Mostrar Nota Mayor</button>
+                <button onclick="notaMenor()">
+                    <i class="fas fa-graduation-cap"></i>
+                    Mostrar Nota Menor</button>
+            </div>
+        </aside>
+        <div class="contenido">
+            <table id="tabla-alumnos" border="1px">
+                <thead>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Nota</th>
+                </thead>
+                <tr>
+                    <td>Jose</td>
+                    <td>Martinez</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Nuñez</td>
+                    <td><span style="color:green"> 12 </span> </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- Pie de Pagina -->
+    <footer>
+        <div id="info-sitio">
+            <div id="contacto">
+                <h2>Contacto</h2>
+                <p>
+                    <a href="mailto:brianrhv@gmail.com">brianrhv@gmail.com</a><br>
+                    calle 4 con 2 <br> t&eacute;lefono: (+51)958221646
+                </p>
+            </div>
+            <div id="terminos">
+                <h2>T&eacute;rminos</h2>
+                <p>
+                    Conoce nuestros t&eacute;rminos y condiciones
+                </p>
+            </div>
+            <div id="redes-sociales">
+                <h2>Redes Sociales</h2>
+                <p>Siguenos en: </p>
+                <ul>
+                    <li> <a href="http://www.facebook.com"><img src="img/logos/facebook_30x30.png"></a></li>
+                    <li> <a href="http://www.twitter.com"><img src="img/logos/twitter_30x30.png"></a></li>
+                    <li> <a href="http://www.instagram.com"> <img src="img/logos/instagram30x30.png"></a></li>
+                </ul>
+            </div>
+            <div id="derechos">
+                <h2>Derechos</h2>
+                <p> Brian Rodrigo Herrera Vergara <br>
+                    <br>
+                    @ Copyright - 2018</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
