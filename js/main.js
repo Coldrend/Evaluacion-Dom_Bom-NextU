@@ -39,14 +39,31 @@ let alumnosTodos =
             "nombre": "Mauricio",
             "apellido": "Ruiz",
             "nota": 18
-        }, {
+        }, 
+        {
             "nombre": "Daniela",
             "apellido": "Romero",
             "nota": 07
-        }, {
+        }, 
+        {
             "nombre": "Pepe",
             "apellido": "Lozano",
-            "nota": 05
+            "nota": 14
+        },
+        {
+            "nombre": "Alejandro",
+            "apellido": "Serrano",
+            "nota": 07
+        },
+        {
+            "nombre": "Rafael",
+            "apellido": "Muñoz",
+            "nota": 15
+        },
+        {
+            "nombre": "Rosario",
+            "apellido": "Saez",
+            "nota": 08
         }
     ];
 
