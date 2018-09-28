@@ -27,54 +27,45 @@
         <aside>
             <div id="registro">
                 <h3>Registro Estudiantes</h3>
-                <form>
-                    <label for="nombre"><b>Nombre:</b></label>
-                
-                    <input type="text" name="nombre">
-              
-                    <label for="apellido"><b>Apellido:</b></label>
-             
-                    <input type="text" name="apellido">
-           
+                <form id="formulario">
                     <label for="nota"><b>Nota:</b></label>
-     
-                    <input type="text" name="nota">
+                    <br>
+                    <span>Entre 0 y 20</span>
+
+                    <input type="number" name="nota" min="0" max="20"  placeholder="Nota entre 0 y 20">
+                   
+                    <label for="nombre"><b>Nombre:</b></label>
+
+                    <input type="text" name="nombre">
+
+                    <label for="apellido"><b>Apellido:</b></label>
+
+                    <input type="text" name="apellido">
                 </form>
             </div>
             <!-- Seccion botones -->
             <div id="botones">
-                <button onclick="mostrarTodo()">
+                <button>
                     <i class="fas fa-graduation-cap"></i>
                     Registrar Estudiante</button>
-                <button onclick="promedioAlumnos()">
+                <button>
                     <i class="fas fa-graduation-cap"></i>
                     Mostrar Promedio</button>
-                <button onclick="notaMayor()">
+                <button>
                     <i class="fas fa-graduation-cap"></i>
                     Mostrar Nota Mayor</button>
-                <button onclick="notaMenor()">
+                <button>
                     <i class="fas fa-graduation-cap"></i>
                     Mostrar Nota Menor</button>
             </div>
         </aside>
+        <!-- Seccion tabla alumnos -->
         <div class="contenido">
-            <table id="tabla-alumnos" border="1px">
-                <thead>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th>Nota</th>
-                </thead>
-                <tr>
-                    <td>Jose</td>
-                    <td>Martinez</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Maria</td>
-                    <td>Nuñez</td>
-                    <td><span style="color:green"> 12 </span> </td>
-                </tr>
-            </table>
+            <div id="marco">
+                <table id="tabla-alumnos" border="1px">
+                  
+                </table>
+            </div>
         </div>
     </section>
     <!-- Pie de Pagina -->
